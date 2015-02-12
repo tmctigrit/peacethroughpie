@@ -2,14 +2,15 @@
 
 .top-bar {
 text-align:center;
-height: 50px;
+height: 55px;
 background: none;
 }
 
 .top-bar-section {
   display: inline-block;
   background-color: #fdf2d3;
-  height: 50px;
+  height: 55px;
+  width: 1550px;
 }
 
 
@@ -20,20 +21,20 @@ background: none;
 .top-bar-section ul li a{
   background: none;
   font-family: 'Fjalla One', sans-serif;
-  letter-spacing: 1px;
-  font-size: 18px;
-  color: brown;
+  letter-spacing: 2px;
+  font-size: 21px;
+  color: #351600;
 }
 
 .top-bar-section li.hover > a:not(.button) {
   background-color: #fdf2d3;
-  color: red;
+  color: #992000;
   border: solid;
   border-color: #fdf2d3;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
-  padding: 0 2.9975rem;
+  padding: 0 2.3975rem;
   line-height: 2.8125rem;
   background: #fdf2d3;
   border: solid;
@@ -42,9 +43,9 @@ background: none;
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
   background-color: #fdf2d3;
-  color: brown;
+  color: #992000;
   border: solid;
-  border-color: red;
+  border-color: #992000;
 }
 
 .piepad {
@@ -53,6 +54,35 @@ background: none;
 
 .navvy {
   background-color: #fdf2d3;
-  height: 50px;
+  height: 55px;
+  width: 88%;
 }
+
+.hero {
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+background-image: url(ptphero.jpg);
+width: 100%;
+height: 550px;
+}
+
+.signinup {
+  color: #fdf2d3;
+}
+
+.top-bar-section .signinup{
+  color: #fdf2d3;
+}
+
+.ptpstory {
+  width: 400px;
+  height: 495px;
+  background: rgba(153, 32, 0, .6);
+  position: absolute;
+  margin-top: 55px;
+  margin-left: -60px;
+}
+
 
