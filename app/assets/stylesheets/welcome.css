@@ -2,14 +2,14 @@
 
 .top-bar {
 text-align:center;
-height: 55px;
+height: 57px;
 background: none;
 }
 
 .top-bar-section {
   display: inline-block;
   background-color: #fdf2d3;
-  height: 55px;
+  height: 100%;
   width: 1550px;
 }
 
@@ -23,7 +23,7 @@ background: none;
   font-family: 'Fjalla One', sans-serif;
   letter-spacing: 2px;
   font-size: 23px;
-  color: #262626;
+  color: #39281c;
 }
 
 .signinup {
@@ -40,7 +40,7 @@ background: none;
 
 .top-bar-section li:not(.has-form) a:not(.button) {
   padding: 0 2.3975rem;
-  line-height: 2.8125rem;
+  line-height: 3.1925rem;
   background: #fdf2d3;
   border: solid;
   border-color: #fdf2d3;
@@ -59,7 +59,7 @@ background: none;
 
 .navvy {
   background-color: #fdf2d3;
-  height: 55px;
+  height: 57px;
   width: 85%;
 }
 
@@ -68,9 +68,9 @@ background: none;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-background-image: url(ptphero.jpg);
+background-image: url(ptphero2.jpg);
 width: 100%;
-height: 550px;
+height: 610px;
 }
 
 
@@ -78,11 +78,40 @@ height: 550px;
 
 .ptpstory {
   width: 400px;
-  height: 495px;
-  background: rgba(153, 32, 0, .4);
+  height: 555px;
+  background: rgba(153, 32, 0, .5);
   position: absolute;
   margin-top: 55px;
-  margin-left: -60px;
+  margin-left: -69px;
+}
+
+.largetext {
+  font-family: 'Maven Pro', sans-serif;
+  color: #fdf2d3;
+  font-size: 71px;
+  letter-spacing: 5px;
+  line-height: 60px;
+  font-weight: 700;
+  margin-right: 3px;
+}
+
+.smalltext {
+  font-family: 'Maven Pro', sans-serif;
+  color: #fdf2d3;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 27px;
+  font-weight: 500;
+}
+
+.medtext {
+  font-family: 'Maven Pro', sans-serif;
+  color: #fdf2d3;
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 60px;
+  font-weight: 700;
+  margin-right: 3px;
 }
 
 
