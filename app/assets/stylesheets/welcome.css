@@ -1,4 +1,6 @@
-
+body {
+  background-color: #fdf2d3;
+}
 
 .top-bar {
 height: 57px;
@@ -130,9 +132,93 @@ height: 610px;
   text-shadow: 2px 2px #39281c;
 }
 
-.container2 {
+.secondcontainer {
   background-color: #fdf2d3;
-  height: 100%;
+  height: 400px;
   width: 100%;
 }
+
+.secondcontainer2 {
+  background: rgba(174, 128, 76, .7);
+  height: 380px;
+  margin-top: 20px;
+  border-radius: 2px;
+}
+
+.socialimage {
+  float: right;
+    position: relative;
+    top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-right: 50px;
+  border-radius: 2px;
+}
+
+.socialtext {
+  display: inline;
+  float: left;
+  margin-top: 55px;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: #39281c;
+  font-weight: 300;
+  width: 450px;
+  text-align: center;
+  margin-left: 50px;
+  line-height: 30px;
+}
+
+.socialtext2 {
+  font-weight: 600;
+}
+
+.getstarted {
+  background: none;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 2px;
+  font-size: 19px;
+  color: #39281c;
+  border-width: 2px;
+  border-color: #39281c;
+
+}
+
+.getstarted:active {
+  background: none;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 2px;
+  font-size: 19px;
+  color: #39281c;
+  border-width: 2px;
+  border-color: #39281c;
+
+}
+
+.getstarted:visited {
+  background: none;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 2px;
+  font-size: 19px;
+  color: #39281c;
+  border-width: 2px;
+  border-color: #39281c;
+
+}
+
+.getstarted:hover {
+  background-color: #ae804c;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 2px;
+  font-size: 19px;
+  color: #39281c;
+  border-width: 2px;
+  border-color: #39281c;
+
+}
+
+
+
 
