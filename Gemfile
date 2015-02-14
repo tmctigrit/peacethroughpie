@@ -46,3 +46,4 @@ end
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem "font-awesome-rails"
