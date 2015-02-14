@@ -1,17 +1,20 @@
 
 
 .top-bar {
-text-align:center;
 height: 57px;
 background: none;
+display: table;
+margin: 0 auto;
+
 }
 
 .top-bar-section {
-  display: inline-block;
   background-color: #fdf2d3;
-  height: 100%;
-  width: 1550px;
+  width: 100%;
+  height: 57px;
+
 }
+
 
 
 .top-bar-section ul li{
@@ -22,7 +25,7 @@ background: none;
   background: none;
   font-family: 'Fjalla One', sans-serif;
   letter-spacing: 2px;
-  font-size: 23px;
+  font-size: 20px;
   color: #39281c;
 }
 
@@ -39,7 +42,7 @@ background: none;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
-  padding: 0 2.3975rem;
+/*  padding: 0 0.3975rem;*/
   line-height: 3.1925rem;
   background: #fdf2d3;
   border: solid;
@@ -54,13 +57,15 @@ background: none;
 }
 
 .piepad {
-  padding: 0 4.0000rem;
+  padding: 0 2.0000rem;
 }
 
 .navvy {
   background-color: #fdf2d3;
-  height: 57px;
-  width: 85%;
+  height: 60px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero {
@@ -78,11 +83,12 @@ height: 610px;
 
 .ptpstory {
   width: 400px;
-  height: 555px;
+  height: 610px;
   background: rgba(153, 32, 0, .5);
-  position: absolute;
+  display: table;
   margin-top: 55px;
-  margin-left: -69px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .largetext {
@@ -114,4 +120,19 @@ height: 610px;
   margin-right: 3px;
 }
 
+.readtext {
+  font-family: 'Maven Pro', sans-serif;
+  color: #dbcca5;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 27px;
+  font-weight: 700;
+  text-shadow: 2px 2px #39281c;
+}
+
+.container2 {
+  background-color: #fdf2d3;
+  height: 100%;
+  width: 100%;
+}
 
