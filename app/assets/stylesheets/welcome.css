@@ -248,4 +248,37 @@ hr {
   border-color: #39281c;
 }
 
+.welcometext {
+  text-align: center;
+  margin-top: 100px;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: #39281c;
+  font-weight: 400;
+
+}
+
+.youreventstext {
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: #39281c;
+
+}
+
+.eventsattending {
+  float: right;
+  display: inline;
+  text-align: center;
+  font-weight: 300;
+}
+
+.eventshosting {
+  display: inline;
+  float: left;
+  font-weight: 300;
+  text-align: center;
+}
+
 
