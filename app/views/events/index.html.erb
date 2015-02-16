@@ -1,6 +1,8 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Listing Events</h1>
+<br>
+<br>
+<br>
+<h1>Pie Socials</h1>
 
 <table>
   <thead>
@@ -21,8 +23,10 @@
         <td><%= event.time.to_formatted_s(:time) %></td>
         <td><%= event.description %></td>
         <td><%= link_to 'Show', event %></td>
+         <% if current_user.id == event.user_id %>
         <td><%= link_to 'Edit', edit_event_path(event) %></td>
         <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>

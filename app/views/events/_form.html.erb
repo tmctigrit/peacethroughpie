@@ -11,23 +11,25 @@
     </div>
   <% end %>
 
-  <div class="field">
+<div class="eventform">
+  <div class="large-4 large-centered columns field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
-  <div class="field">
+  <div class="large-4 large-centered columns field">
     <%= f.label :date %><br>
     <%= f.date_select :date %>
   </div>
-    <div class="field">
+    <div class="large-4 large-centered columns field">
     <%= f.label :time %><br>
     <%= f.time_select :time %>
   </div>
-  <div class="field">
+  <div class="large-4 large-centered columns field">
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </div>
-  <div class="actions">
+  <div class="large-4 large-centered columns actions">
     <%= f.submit %>
   </div>
 <% end %>
+</div>
