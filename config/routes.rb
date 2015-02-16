@@ -3,13 +3,23 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  get "/welcome/story"
+  get "/story" => 'welcome#story'
 
-  get "/welcome/about"
+  get "/about" => 'welcome#about'
+
+  get '/events' => 'events#index'
+
+  get '/events/new' => 'events#new'
+
+  get '/recipes/new' => 'recipes#new'
+
+  get '/recipes' => 'recipes#index'
+
 
   resources :events
 
   devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
