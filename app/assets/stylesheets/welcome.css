@@ -3,10 +3,10 @@ body {
 }
 
 .top-bar {
-height: 57px;
-background: none;
-display: table;
-margin: 0 auto;
+  height: 57px;
+  background: none;
+  display: table;
+  margin: 0 auto;
 
 }
 
@@ -16,8 +16,6 @@ margin: 0 auto;
   height: 57px;
 
 }
-
-
 
 .top-bar-section ul li{
   background: none;
@@ -71,17 +69,14 @@ margin: 0 auto;
 }
 
 .hero {
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-background-image: url(ptphero2.jpg);
-width: 100%;
-height: 660px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(ptphero2.jpg);
+  width: 100%;
+  height: 660px;
 }
-
-
-
 
 .ptpstory {
   width: 400px;
@@ -157,8 +152,8 @@ height: 660px;
 
 .socialimage {
   float: right;
-    position: relative;
-    top: 50%;
+  position: relative;
+  top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
