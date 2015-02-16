@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   root 'welcome#index'
 
+  get "/welcome/story"
+
+  get "/welcome/about"
+
   resources :events
 
   devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
