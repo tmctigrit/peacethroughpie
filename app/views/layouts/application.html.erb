@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <%= favicon_link_tag 'animated_favicon1.gif' %>
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Peace Through Pie" %></title>
 
     <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Arimo:400,700|Maven+Pro:500,400' rel='stylesheet' type='text/css'>
@@ -25,38 +25,51 @@
                 <section class="top-bar-section">
                     <ul>
                         <li>
-                            <a href="events"><i class="fa fa-search"></i>&nbsp;FIND A PIE SOCIAL&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="/events"><i class="fa fa-search"></i>&nbsp;FIND A PIE SOCIAL&nbsp;&nbsp;&nbsp;&nbsp;</a>
                         </li>
+
                         <li>
-                            <a href="events/new"><i class="fa fa-users"></i>&nbsp;HOST A PIE SOCIAL</a>
+                        <a href="/events/new"><i class="fa fa-users"></i>&nbsp;HOST A PIE SOCIAL</a>
                         </li>
+
                         <li class="piepad">
-                            <%= image_tag("ptplogo.png", :size => "100x100")%>
+                        <%= image_tag("ptplogo.png", :size => "100x100")%>
                         </li>
+
                     <% if user_signed_in? %>
+
                         <li>
-                            <a href="recipes">FIND A RECIPE</a>
+                        <a href="/recipes">FIND A RECIPE</a>
                         </li>
+
                         <li>
-                            <a href="recipes/new">SUBMIT A RECIPE</a>
+                        <a href="/recipes/new">SUBMIT A RECIPE</a>
                         </li>
+
                         <li>
-                            <a href="users/sign_out"><span class="signinup">SIGN OUT</a>
+                        <a href="/users/sign_out"><span class="signinup">SIGN OUT</a>
                         </li></span>
+
                         <li></li>
+
                     <% else %>
+
                         <li>
-                            <a href="welcome/about">HOW IT WORKS</a>
+                        <a href="about">HOW IT WORKS</a>
                         </li>
+
                         <li>
-                            <a href="users/sign_in">RECIPES</a>
+                        <a href="users/sign_in">RECIPES</a>
                         </li>
+
                         <li>
-                            <a href="users/sign_in"><span class="signinup">LOGIN</a>
+                        <a href="users/sign_in"><span class="signinup">LOGIN</a>
                         </li></span>
+
                         <li>
-                            <a href="users/sign_in">SIGN UP</a>
+                        <a href="users/sign_in">SIGN UP</a>
                         </li>
+
                     <% end %>
                     </ul>
                 </section>
