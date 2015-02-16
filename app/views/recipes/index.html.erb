@@ -23,8 +23,10 @@
         <td><%= recipe.directions %></td>
         <td><%= recipe.imagefile %></td>
         <td><%= link_to 'Show', recipe %></td>
+        <% if current_user.id == recipe.user_id %>
         <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
         <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
