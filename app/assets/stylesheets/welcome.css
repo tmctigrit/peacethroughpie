@@ -58,8 +58,10 @@ body {
 
 .piepad {
   padding: 0 2.0000rem;
+  background: none;
 }
 
+.piepad li:
 .navvy {
   background-color: #fdf2d3;
   height: 60px;
@@ -264,19 +266,17 @@ hr {
   letter-spacing: 2px;
   font-size: 20px;
   color: #39281c;
+  background: rgba(153, 32, 0, .7);
 
 }
 
 .eventsattending {
-  float: right;
-  display: inline;
   text-align: center;
   font-weight: 300;
 }
 
 .eventshosting {
-  display: inline;
-  float: left;
+  text-align: center;
   font-weight: 300;
   text-align: center;
 }
