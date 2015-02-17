@@ -1,7 +1,15 @@
 class WelcomeController < ApplicationController
   def index
     if user_signed_in?
-      @events = Event.where(:user_id => current_user.id)
+      @events = current_user.managed_events
+      myrsvps = current_user.rsvps
+      @rsvps = myrsvps.map { |x| x.event }
+      # myrsvps.each do |rsvp|
+      #   @userattending = Event.where(:id => rsvp.event_id)
+      # end
+
+      @recipes = Recipe.where(:user_id => current_user.id)
+
     end
   end
 

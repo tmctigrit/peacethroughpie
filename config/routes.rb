@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'rsvps/index'
+
+  get 'rsvps/show'
+
+  get 'rsvps/create'
+
   resources :recipes
 
   root 'welcome#index'
@@ -16,7 +22,11 @@ Rails.application.routes.draw do
   get '/recipes' => 'recipes#index'
 
 
-  resources :events
+  resources :events do
+    resources :rsvps
+  end
+
+  # resources :rsvps, :only => [:index]
 
   devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
 

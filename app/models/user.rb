@@ -2,7 +2,12 @@ class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
 
-  has_many :events
+  # has_many :events
+
+  has_many :managed_events, :class_name => 'Event', :foreign_key => 'planner_id'
+  has_many :rsvps
+  has_many :events, :through => :rsvps
+
   has_many :recipes
 
   devise :database_authenticatable, :registerable,

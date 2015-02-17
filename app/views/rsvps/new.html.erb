@@ -1,0 +1,9 @@
+<h3>New RSVP Page</h3>
+
+<%= form_for([@event, @rsvp]) do |f| %>
+  <%= f.label :extras %>
+  <%= f.text_field :extras %>
+  <%= f.label :message %>
+  <%= f.text_field :message %>
+  <%= f.submit %>
+<% end %>
