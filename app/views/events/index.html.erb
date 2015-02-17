@@ -23,10 +23,11 @@
         <td><%= event.time.to_formatted_s(:time) %></td>
         <td><%= event.description %></td>
         <td><%= link_to 'Show', event %></td>
-         <% if current_user.id == event.user_id %>
+         <% if current_user.id == event.planner_id %>
         <td><%= link_to 'Edit', edit_event_path(event) %></td>
         <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
+        <td><%= link_to 'Rsvp', new_event_rsvp_path(event) %></td>
       </tr>
     <% end %>
   </tbody>

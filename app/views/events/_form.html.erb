@@ -1,4 +1,5 @@
-<%= form_for(@event) do |f| %>
+
+  <%= form_for(@event) do |f| %>
   <% if @event.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
@@ -10,8 +11,10 @@
       </ul>
     </div>
   <% end %>
-
 <div class="eventform">
+  <br>
+  <br>
+  <br>
   <div class="large-4 large-centered columns field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
@@ -33,3 +36,4 @@
   </div>
 <% end %>
 </div>
+
