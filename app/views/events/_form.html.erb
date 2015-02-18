@@ -11,28 +11,51 @@
       </ul>
     </div>
   <% end %>
+
+
+
+
 <div class="eventform">
   <br>
   <br>
   <br>
-  <div class="large-4 large-centered columns field">
-    <%= f.label :name %>
-    <%= f.text_field :name, :class => "stay-on-line" %>
+  <div class="large-6 large-centered columns field">
+    <div class="large-1 columns">
+    <i class="fa fa-edit"></i>
   </div>
-  <div class="large-4 large-centered columns field">
-    <%= f.label :date %><br>
+    <div class="large-11 columns">
+    <%= f.text_field :name, :placeholder => "Social Name", :class => "stay-on-line" %>
+  </div>
+  </div>
+
+  <div class="large-6 large-centered columns field">
+    <div class="large-1 columns">
+    <i class="fa fa-calendar"></i>
+  </div>
+    <div class="large-11 columns">
     <%= f.date_select :date %>
   </div>
-    <div class="large-4 large-centered columns field">
-    <%= f.label :time %><br>
+</div>
+
+    <div class="large-6 large-centered columns field">
+    <div class="large-1 columns">
+    <i class="fa fa-clock-o"></i>
+    </div>
+    <div class="large-11 columns">
     <%= f.time_select :time %>
   </div>
-  <div class="large-4 large-centered columns field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
+</div>
+
+  <div class="large-6 large-centered columns field">
+    <div class="large-1 columns">
+    <i class="fa fa-info-circle"></i>
+    </div>
+   <div class="large-11 columns">
+    <%= f.text_area :description, :placeholder => "Give a brief description of your Social." %>
   </div>
+</div>
   <div class="large-4 large-centered columns actions">
-    <%= f.submit %>
+    <center><%= f.submit :class => "small button radius createbutton" %></center>
   </div>
 <% end %>
 </div>
