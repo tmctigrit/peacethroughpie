@@ -1,0 +1,17 @@
+  <br>
+  <br><center>
+  <%- if devise_mapping.omniauthable? %>
+  <%- resource_class.omniauth_providers.each do |provider| %>
+    <%= link_to "  Sign in with #{provider.to_s.titleize}", omniauth_authorize_path(resource_name, provider), :class => "fa fa-facebook-official button radius fblogin"%><br />
+  <% end -%>
+<% end -%>
+<br>
+<div class="large-2 large-centered columns">
+<hr class="orline"></hr>
+<hr class="orline2"></hr>
+<div class="orcircle">
+ <br>
+<span class="ortext">Or</span>
+</div>
+</div>
+</center>
