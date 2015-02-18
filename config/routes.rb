@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get '/recipes' => 'recipes#index'
 
 
+
   resources :events do
     resources :rsvps
   end
