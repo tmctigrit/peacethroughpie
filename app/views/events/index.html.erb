@@ -1,17 +1,21 @@
-<p id="notice"><%= notice %></p>
+<div class="12-large 12-centered columns findhero">
+  <p id="notice"><%= notice %></p>
 <br>
 <br>
 <br>
+<br>
+<br>
+<center>
 <h1>Pie Socials</h1>
 
 <table>
   <thead>
-    <tr>
+    <tr class="youreventstext">
       <th>Name</th>
       <th>Date</th>
       <th>Time</th>
       <th>Description</th>
-      <th colspan="3"></th>
+      <th colspan="4"></th>
     </tr>
   </thead>
 
@@ -22,17 +26,19 @@
         <td><%= event.date %></td>
         <td><%= event.time.to_formatted_s(:time) %></td>
         <td><%= event.description %></td>
-        <td><%= link_to 'Show', event %></td>
+        <td class="youreventstext"><%= link_to 'Show', event %></td>
          <% if current_user.id == event.planner_id %>
-        <td><%= link_to 'Edit', edit_event_path(event) %></td>
-        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="youreventstext"><%= link_to 'Edit', edit_event_path(event) %></td>
+        <td class="youreventstext"><%= link_to 'Delete', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
-        <td><%= link_to 'Rsvp', new_event_rsvp_path(event) %></td>
+        <td class="youreventstext"><%= link_to 'Rsvp', new_event_rsvp_path(event) %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
+</center>
 <br>
-
+<center>
 <%= link_to 'New Event', new_event_path %>
+</center>
+</div>
