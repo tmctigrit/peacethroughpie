@@ -68,3 +68,21 @@ div {
     list-style: square;
   }
 }
+
+.submitrecipe {
+  color: brown;
+  text-shadow: none;
+}
+
+.createbutton2 {
+  font-size: 16px;
+  color: #fdf2d3;
+  background: rgba(153, 32, 0, .8);
+
+}
+
+.createbutton2:hover {
+  font-size: 16px;
+  color: brown;
+  background: rgba(174, 128, 76, .9);
+}

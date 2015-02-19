@@ -14,27 +14,28 @@
 <br>
 <br>
 <br>
-  <div class="field">
-    <%= f.label :name %><br>
+  <div class="large-6 large-centered columns field">
+    <%= f.label :name, :class => "submitrecipe" %><br>
     <%= f.text_field :name %>
   </div>
-  <div class="field">
-    <%= f.label :serves %><br>
+  <div class="large-6 large-centered columns field">
+    <%= f.label :serves, :class => "submitrecipe" %><br>
     <%= f.number_field :serves %>
   </div>
-  <div class="field">
-    <%= f.label :ingredients %><br>
+  <div class="large-6 large-centered columns field">
+    <%= f.label :ingredients, :class => "submitrecipe"%><br>
     <%= f.text_area :ingredients %>
   </div>
-  <div class="field">
-    <%= f.label :directions %><br>
+  <div class="large-6 large-centered columns field">
+    <%= f.label :directions, :class => "submitrecipe" %><br>
     <%= f.text_area :directions %>
-  </div>
+  <div class="large-6 large-centered columns field">
   <div class="field">
-    <%= f.label :imagefile %><br>
+    <%= f.label :imagefile, :class => "submitrecipe" %><br>
     <%= f.text_field :imagefile %>
   </div>
+<center>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :class => "small button radius createbutton2" %>
   </div>
 <% end %>
