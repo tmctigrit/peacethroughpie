@@ -361,3 +361,14 @@ text-shadow: 1px 1px #39281c;
   margin-right: 5px;
 }
 
+button.radius, .fblogin:hover {
+  font-size: 16px;
+  color: #fdf2d3;
+  background: rgba(174, 128, 76, .9);
+
+}
+
+label {
+  color: #fdf2d3;
+  text-shadow: 1px 1px #39281c;
+}
