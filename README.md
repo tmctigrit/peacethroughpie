@@ -8,14 +8,22 @@ encouraging them to get involved in their community, take action and cultivate p
 
 Tech Stack:
 
-Ruby on Rails
-PostgreSQL
-Devise Gem
-OmniAuth Gem
-Facebook API
-CSS
-Google Fonts
-Font Awesome
+Ruby on Rails  
+
+PostgreSQL  
+
+Devise Gem  
+
+OmniAuth Gem  
+
+Facebook API  
+
+CSS  
+
+Google Fonts  
+
+Font Awesome  
+
 
 A User can...
 
