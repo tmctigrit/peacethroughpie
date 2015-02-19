@@ -1,9 +1,17 @@
-<h3>New RSVP Page</h3>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="large-6 large-centered columns">
 <%= form_for([@event, @rsvp]) do |f| %>
-  <%= f.label :extras %>
+  <%= f.label :extras, :class => "submitrecipe" %>
   <%= f.text_field :extras %>
-  <%= f.label :message %>
+  <%= f.label :message, :class => "submitrecipe" %>
   <%= f.text_field :message %>
-  <%= f.submit %>
+  <%= f.submit :class => "small button radius createbutton2"%>
 <% end %>
+</div>
