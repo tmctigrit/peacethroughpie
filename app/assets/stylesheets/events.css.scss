@@ -19,7 +19,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-image: url('<%= asset_path('hostsocialbg.jpg') %>');
+  background-image: image-url("hostsocialbg.jpg");
   width: 100%;
   height: 660px;
 }
@@ -33,7 +33,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-image: url('<%= asset_path('loginbg2.jpg') %>');
+  background-image: image-url("loginbg2.jpg");
   width: 100%;
   height: 700px;
 }
@@ -79,20 +79,18 @@ background-color: rgba(253, 242, 211, .9);
 color: #7a5934;
 }
 
-.createbutton:hover {
-  color: rgba(253, 242, 211, .9);
-  background-color: #7a5934;
-}
-
-
-
 
 .findhero {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-image: url('<%= asset_path('findsocialbg.jpg') %>');
+  background-image: image-url("findsocialbg.jpg");
   width: 100%;
   height: 660px;
+}
+
+.createbutton:hover {
+  color: rgba(253, 242, 211, .9);
+  background-color: #7a5934;
 }

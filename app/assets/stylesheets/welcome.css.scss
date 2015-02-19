@@ -61,7 +61,7 @@ body {
   background: none;
 }
 
-.piepad li:
+.piepad li,
 .navvy {
   background-color: #fdf2d3;
   height: 60px;
@@ -75,7 +75,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-image: url('<%= asset_path('ptphero2.jpg') %>');
+  background-image: image-url("ptphero2.jpg");
   width: 100%;
   height: 660px;
 }
@@ -281,4 +281,110 @@ hr {
   text-align: center;
 }
 
+button.radius, .fblogin {
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  color: #fdf2d3;
+  background: rgba(153, 32, 0, .8);
 
+}
+
+button.radius, .button.radius {
+  font-size: 16px;
+}
+
+.fa.fa-facebook {
+font-size: 4em;
+}
+
+.orcircle {
+background: rgba(253, 242, 211, .7);
+border-radius: 200px;
+width: 50px;
+height: 50px;
+letter-spacing: 1px;
+font-size: 18px;
+color: brown;
+z-index: 10;
+}
+
+.orline {
+  border-width: 1px;
+  border-color: rgba(253, 242, 211, .6);
+  position: absolute;
+  top: 13%;
+  right: 62%;
+  width: 30%;
+}
+
+.orline2 {
+  border-width: 1px;
+  border-color: rgba(253, 242, 211, .6);
+  position: absolute;
+  top: 13%;
+  left: 62%;
+  width: 30%;
+}
+
+.ortext {
+  z-index: 100;
+}
+
+.formfieldstyle {
+border-radius: 3px;
+border-radius: rgba(253, 242, 211, .6);
+}
+
+.fa.fa-envelope {
+font-size: 2em;
+margin-top: 5px;
+margin-left: 25px;
+color: rgba(253, 242, 211, .9);
+text-shadow: 1px 1px #39281c;
+
+}
+
+.fa.fa-lock {
+font-size: 2.5em;
+margin-top: 5px;
+margin-left: 25px;
+color: rgba(253, 242, 211, .9);
+text-shadow: 1px 1px #39281c;
+}
+
+.rmeposition {
+  margin-left: 80px;
+}
+
+.rmeposition2 {
+  margin-right: 5px;
+}
+
+button.radius, .fblogin:hover {
+  font-size: 16px;
+  color: #fdf2d3;
+  background: rgba(174, 128, 76, .9);
+
+}
+
+button.radius, .fblogin:active {
+  font-size: 16px;
+  color: #fdf2d3;
+  background: rgba(174, 128, 76, .9);
+
+}
+
+
+label {
+  color: #fdf2d3;
+  text-shadow: 1px 1px #39281c;
+}
+
+a {
+color: #fdf2d3;
+}
+
+.menutext {
+  font-family: 'Fjalla One', sans-serif;
+}
